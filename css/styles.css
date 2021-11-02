@@ -1,0 +1,424 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  color: #F0F0F1;
+  list-style-type: none;
+  text-decoration: none;
+  outline: none;
+  word-break: break-word;
+}
+
+* button {
+  background-color: transparent;
+}
+
+* button:hover {
+  -webkit-filter: brightness(5);
+          filter: brightness(5);
+}
+
+* button:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+* body {
+  width: 100%;
+  height: 100vh;
+  background-color: #1c1c1c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100px;
+}
+
+* header div {
+  -webkit-animation: movie 10s infinite;
+          animation: movie 10s infinite;
+}
+
+* .menuli {
+  -webkit-animation: movie 10s infinite;
+          animation: movie 10s infinite;
+}
+
+* .headerMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 15px;
+}
+
+* .content {
+  width: 500px;
+  background-color: #2e8b57;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+* .error {
+  border-color: red;
+  border-style: groove;
+  border-width: 2px;
+  -webkit-animation: errorInput 1s normal;
+          animation: errorInput 1s normal;
+}
+
+* .inputNew {
+  width: 80%;
+  height: 50px;
+  padding: 10px;
+  color: #010101;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+* .list {
+  padding: 10px;
+}
+
+* .listLi {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+  -webkit-animation: fadein 1s;
+          animation: fadein 1s;
+  margin-bottom: 15px;
+}
+
+* .buttons {
+  width: 100px;
+}
+
+* #windowEdit {
+  z-index: 101;
+  width: 500px;
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-radius: 10px;
+  top: 20%;
+  background-color: #2e8b57;
+  padding: 10px;
+  display: none;
+}
+
+* #windowEdit.open {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+* #windowEdit h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+* #windowEdit form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+* .inputEdit {
+  width: 80%;
+  height: 50px;
+  margin: 15px;
+  border-radius: 5px;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+* .linha {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* .linha label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+* #windowFundo {
+  position: fixed;
+  background-color: #000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  opacity: 0.9;
+  display: none;
+}
+
+* #windowFundo.open {
+  display: block !important;
+}
+
+@-webkit-keyframes errorInput {
+  0% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+  5% {
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
+  }
+  15% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
+  }
+  25% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+  50% {
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
+  }
+  70% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+  75% {
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
+  }
+  100% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+}
+
+@keyframes errorInput {
+  0% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+  5% {
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
+  }
+  15% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
+  }
+  25% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+  50% {
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
+  }
+  70% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+  75% {
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
+  }
+  100% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    -webkit-transform: translateX(150%);
+            transform: translateX(150%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translatex(0%);
+            transform: translatex(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    -webkit-transform: translateX(150%);
+            transform: translateX(150%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translatex(0%);
+            transform: translatex(0%);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes movie {
+  0% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  5% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  15% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  20% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  25% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  70% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  75% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  100% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+}
+
+@keyframes movie {
+  0% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  5% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  15% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  20% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  25% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  70% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  75% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  100% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+}
+
+@media (max-width: 500px) {
+  * .content {
+    width: 80%;
+  }
+  * #windowEdit {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

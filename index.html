@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="https://img.icons8.com/clouds/100/000000/search-in-list.png"/>
+        </div>
+        <nav>
+            <ul>
+                <li class="menuli">
+                   <a href="#"><img src="https://img.icons8.com/clouds/100/000000/checklist.png"/></a> 
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class= "content">
+        <h1>Lista de Tarefas</h1>
+        <div class = "headerMenu">
+            <input type="text" id="inputNew" class="inputNew" placeholder="Adicione o seu texto">
+            <button id ="addNew"><img src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/40/000000/external-add-delivery-kiranshastry-gradient-kiranshastry.png"/></button>
+        </div>
+
+        <ul id="list" class="list">
+            <!-- <li class="listLi">
+                <span class="textList"> Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</span>
+                <div class="buttons">
+                    <button class="btnEdit">
+                        <img src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/30/000000/external-edit-interface-kiranshastry-gradient-kiranshastry-1.png"/>
+                    </button>
+                    <button class="btnDelete">
+                        <img src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/30/000000/external-delete-miscellaneous-kiranshastry-gradient-kiranshastry.png"/>
+                    </button>
+                </div>
+            </li>
+             -->
+            
+        </ul>
+    </div>
+    
+
+
+    <div id = "windowEdit" class="windowEdit">
+        <button id="btnClose" class="btnClose">
+            <img src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/40/000000/external-delete-graph-design-kiranshastry-gradient-kiranshastry.png"/>
+        </button>
+        <h2 id="idTarefaAtt">#10323</h2>
+        
+        <form>
+            <div class="linha">
+
+                <label for="nome">Texto: </label>
+                <input type="text" id="inputEdit" placeholder="" class="inputEdit">
+            </div>
+            
+                <button id="btnAdd" class="btnAdd">
+                    <img src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/45/000000/external-energy-energy-kiranshastry-gradient-kiranshastry-1.png"/>
+                </button>
+            
+        </form>
+    </div>
+    <div id="windowFundo">
+
+    </div>
+</body>
+<script src="js/scripts.js">
+
+</script>
+</html>
