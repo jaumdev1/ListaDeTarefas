@@ -16,7 +16,8 @@ let btnAdd = document.querySelector("#btnAdd");
 
 let idTarefaAtt = document.querySelector("#idTarefaAtt") 
 
-let inputEdit = document.querySelector("#inputEdit") 
+let inputEdit = document.querySelector("#inputEdit")
+
 
 inputNew.addEventListener('keypress', (e)=>{
         alert
